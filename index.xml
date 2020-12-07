@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection'
+  xmlns='http://www.w3.org/1999/xhtml'
+  xmlns:b='http://www.google.com/2005/gml/b'
+  xmlns:data='http://www.google.com/2005/gml/data'
+  xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+  <!--Head-->  &lt;head&gt;
+        <!-- Init Page -->
+  <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+    <meta expr:content='&quot;0;URL=&quot; + data:blog.homepageUrl' http-equiv='refresh'/>
+  </b:if>
+
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+  <b:include data='blog' name='all-head-content'/>
+
+  <title>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <data:blog.pageTitle/>
+      <b:else/>
+      <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+        <data:blog.pageName/>
+ -        <data:blog.title/>
+        <b:else/>
+          ERROR 404 - <data:blog.title/>
+      </b:if>
+    </b:if>
+  </title>
+
+  <!-- Description and Keywords -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta expr:content='data:blog.metaDescription' name='description'/>
+    <meta content='' property='og:image'/>
+  </b:if>
+  <meta content='' name='keywords'/>
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <meta expr:content='data:blog.pageName' property='og:title'/>
+    <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+    <meta content='article' property='og:type'/>
+  </b:if>
+  <b:if cond='data:blog.postImageUrl'>
+    <meta expr:content='data:blog.postImageUrl' property='og:image'/>
+    <b:else/>
+    <b:if cond='data:blog.postImageThumbnailUrl'>
+      <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+    <meta expr:content='data:blog.metaDescription' name='og:description'/>
+  </b:if>
+  <meta expr:content='data:blog.title' property='og:site_name'/>
+  <meta expr:content='data:blog.homepageUrl' name='twitter:domain'/>
+  <meta expr:content='data:blog.pageName' name='twitter:title'/>
+  <b:if cond='data:blog.postImageUrl'>
+    <meta content='summary_large_image' name='twitter:card'/>
+    <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+    <b:else/>
+    <meta content='summary' name='twitter:card'/>
+    <b:if cond='data:blog.postImageThumbnailUrl'>
+      <meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/>
+    </b:if>
+  </b:if>
+  <meta expr:content='data:blog.pageName' name='twitter:title'/>
+  <b:if cond='data:blog.metaDescription'>
+    <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+  </b:if>
+
+
+  <!-- Skin isPage -->
+  <b:if cond='data:view.isPage'>
+
+  </b:if>
+
+  <!-- Skin N3Band -->
+  <b:skin><![CDATA[  
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/bundle.min.css'
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/LineIcons.min.css'
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/jquery.fancybox.min.css'
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/owl.carousel.min.css'
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/tootik.min.css'
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/line-awesome.min.css'
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/jquery.pagepiling.css'
+    @import 'https://joelsinchej.github.io/n3/public/vendor/css/style.css'    
+    ]]>  </b:skin>
+  <b:template-skin><![CDATA[
+      body#layout{background-color:#F7F7F7}body#layout li,body#layout ul{list-style:none;padding:0}body#layout .editlink{border:1px solid #4e4e4d;border-radius:2px;padding:5px 10px;line-height:normal;color:#4e4e4d!important}body#layout .header-content{margin:20px 0 35px}body#layout div#header{width:44%;float:left;z-index:999;margin-top:13px}body#layout div#header-social{width:92%;display:inline-block}body#layout ul#menu-main-nav{width:50%;float:right}body#layout div#home-1-block-4{width:65%;float:left;background:#1a6cd6;margin-top:14px;padding:15px 0}body#layout div#home_post_widget-2,body#layout div#home_post_widget-5{width:42%;display:inline-block}body#layout div#home_post_widget-3,body#layout div#home_post_widget-6{width:41%;display:inline-block}body#layout aside#main-sidebar{width:34%;padding:15px 0;float:right;background:#b71ad2}body#layout .tc-tabviewsection{background:#15d4bb;padding:10px 0;margin-bottom:20px}body#layout div#footer{float:left;width:100%;background:#3ada39;padding:8px 0}body#layout .footer{float:left;width:28%}body#layout div#top-nav{background:#f12d2d;padding:8px}body#layout .wrapper.group{background:#e88126;display:inline-block;width:100%}body#layout .section h4{background:#4e4e4d;color:#fff;padding:15px;margin:0;text-transform:capitalize}body#layout div#content{width:92%;z-index:99;background:#4097e4}body#layout div#sidebar{width:85%;display:inline-block}body#layout:before{content:"Diseñado por: Joel Sinche";background:#000;color:#fff;position:absolute;font-family:monospace;top:0;width:100%;left:0;padding:20px 0}body#layout:after{content:":)";background:#fb9240;color:#fff;position:absolute;font-family:monospace;top:53px;width:100%;left:0;z-index:99999;padding:10px 0;visibility:visible}body#layout header:before{content:"Header Area";width:100%;display:block;background:#4e4e4d;padding:20px 0;color:#fff;font-family:sans-serif;z-index:999999;font-weight:700}
+   ]]>  </b:template-skin>
+
+  <b:if cond='!data:view.isPage AND !data:view.isPost'>
+    <b:else/>
+  </b:if>
+
+
+  <!-- Skin isPost -->
+  <b:if cond='data:view.isPost'>
+
+  </b:if>
+
+
+
+
+
+
+&lt;/head&gt;&lt;!--<head/>
+--&gt;
+
+<!-- Body -->
+<body>
+
+
+  <b:section id='MENU PRINCIPAL' maxwidgets='1' showaddelement='yes'/>
+
+
+  <!-- HTML -->
+
+
+  <!-- Scripts -->
+  <script language='javascript' type='text/javascript'>
+    //    <![CDATA[ 
+    
+    //]]>
+  </script>
+
+</body>
+
+
+
+</html>
