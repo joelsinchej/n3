@@ -1,1 +1,42 @@
-<svg id="_1-1_Variante_Orden_copia" data-name="1-1 Variante Orden copia" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.25 54.9"><defs><style>.cls-1{font-size:22.92px;}.cls-1,.cls-2,.cls-4{fill:#810000;}.cls-1,.cls-2{font-family:LEMONMILK-Bold, LEMON MILK;font-weight:700;}.cls-2{font-size:19.08px;}.cls-3{font-size:14.31px;}</style></defs><title>LOGO C Y T - ELEGIDO</title><text class="cls-1" transform="translate(71.73 20.48) scale(0.91 1)">CABINET <tspan x="0" y="27.5">DISTRIBUTION</tspan></text><text class="cls-2" transform="translate(8.45 40.14)">C <tspan class="cls-3" x="20.69" y="0">&amp; </tspan><tspan x="36.47" y="0">T</tspan></text><path class="cls-4" d="M34,54.91l23.91-16.6a3,3,0,0,1,1-.45,2.78,2.78,0,0,1,2.16.42L85,54.91H92.1v-.09h0L63.37,34.92a6.83,6.83,0,0,0-7.79,0L26.83,54.82v.09Z" transform="translate(-26.83 -31.83)"/><path class="cls-4" d="M88,64.4V74a2.74,2.74,0,0,1-2.74,2.74H33.67A2.74,2.74,0,0,1,30.93,74V64.4h-4.1V74a6.83,6.83,0,0,0,6.84,6.83h51.6A6.83,6.83,0,0,0,92.1,74V64.4Z" transform="translate(-26.83 -31.83)"/></svg>
+<svg id="_1-1_Variante_Orden_copia" data-name="1-1 Variante Orden copia" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 232.25 54.9">
+    <defs>
+        <style>
+            @import url('./fonts/stylesheet.css');
+            .cls-1 {
+                font-size: 22.92px;
+            }
+
+            .cls-1,
+            .cls-2,
+            .cls-4 {
+                fill: #810000;
+            }
+
+            .cls-1,
+            .cls-2 {
+                font-family: 'lemon_milkbold', 'lemon_milkregular';
+                font-weight: 700;
+            }
+
+            .cls-2 {
+                font-size: 19.08px;
+            }
+
+            .cls-3 {
+                font-size: 14.31px;
+            }
+        </style>
+    </defs>
+    <title>LOGO C Y T - ELEGIDO</title><text class="cls-1" transform="translate(71.73 20.48) scale(0.91 1)">CABINET
+        <tspan x="0" y="27.5">DISTRIBUTION</tspan></text><text class="cls-2" transform="translate(8.45 40.14)">C <tspan
+            class="cls-3" x="20.69" y="0">&amp; </tspan>
+        <tspan x="36.47" y="0">T</tspan>
+    </text>
+    <path class="cls-4"
+        d="M34,54.91l23.91-16.6a3,3,0,0,1,1-.45,2.78,2.78,0,0,1,2.16.42L85,54.91H92.1v-.09h0L63.37,34.92a6.83,6.83,0,0,0-7.79,0L26.83,54.82v.09Z"
+        transform="translate(-26.83 -31.83)" />
+    <path class="cls-4"
+        d="M88,64.4V74a2.74,2.74,0,0,1-2.74,2.74H33.67A2.74,2.74,0,0,1,30.93,74V64.4h-4.1V74a6.83,6.83,0,0,0,6.84,6.83h51.6A6.83,6.83,0,0,0,92.1,74V64.4Z"
+        transform="translate(-26.83 -31.83)" />
+</svg>
